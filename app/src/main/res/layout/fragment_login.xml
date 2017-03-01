@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <EditText
+        android:id="@+id/mEditText"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/mSendToEmail"
+        android:textColorHint="@color/orange"
+        android:textSize="18sp"
+        android:maxLines="1"
+        android:hint="Please input Email adress"/>
+    <Button
+        android:layout_width="match_parent"
+        android:text="发送Log日志到开发人员邮箱"
+        android:id="@+id/btn_fragment_login_emial"
+        android:layout_height="100dp"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_dialog"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_exitdiglog_hint_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="@string/dialog_action"
+        android:textColor="#0b0b0b"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="@string/dialog_msg"
+        android:textColor="#202121" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/dialog_btn_exit_exit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textColor="@color/selector_color_text"
+            android:background="@drawable/selector_btn_dialog"
+            android:text="@string/dialog_exit" />
+
+        <Button
+            android:id="@+id/dialog_btn_exit_min"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textColor="@color/selector_color_text"
+            android:background="@drawable/selector_btn_dialog"
+            android:text="@string/dialog_min" />
+
+        <Button
+            android:id="@+id/dialog_btn_exit_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textColor="@color/selector_color_text"
+            android:background="@drawable/selector_btn_dialog"
+            android:text="@string/dialog_cancel" />
+    </LinearLayout>
+
+</LinearLayout>

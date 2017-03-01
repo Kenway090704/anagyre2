@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="7"
+    >
+
+
+    <!--中间内容-->
+    <FrameLayout
+        android:id="@+id/home_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#fff" />
+    <!--这是底部的RadioButton布局-->
+    <RadioGroup
+        android:gravity="center_vertical"
+        android:id="@+id/rg_home"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_radio_group_bg"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        >
+
+        <RadioButton
+            android:id="@+id/rd_home_connect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="3dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@null"
+            android:drawableTop="@drawable/select_connect_rd"
+            android:gravity="center"
+            android:text="@string/rb_connect"
+            android:textColor="@color/select_text"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/rd_home_analysis"
+            android:gravity="center"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/analyse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="@string/rb_analyse"
+            android:textColor="@color/select_text"
+            android:textSize="10sp"/>
+
+        <RadioButton
+            android:id="@+id/rd_home_vs"
+            android:drawableTop="@drawable/double_pk"
+            android:gravity="center"
+            android:drawablePadding="3dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="@string/rb_vs"
+            android:textColor="@color/select_text"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/rd_home_mulPlayer"
+            android:drawableTop="@drawable/mulplayer"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:drawablePadding="3dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="@string/rb_mulplayer"
+            android:textColor="@color/select_text"
+            android:textSize="10sp" />
+
+        <View
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+
+            />
+        <View
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            />
+
+        <CheckBox
+            android:id="@+id/rd_home_DeviceConState"
+            android:drawableTop="@drawable/device_state"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:enabled="false"
+            android:text="@string/rb_devstate"
+            android:drawablePadding="3dp"
+            android:textColor="@color/select_text"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/rd_home_login"
+            android:drawableTop="@mipmap/login"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:drawablePadding="3dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="@string/rb_login"
+            android:textColor="@color/select_text"
+            android:textSize="10sp" />
+    </RadioGroup>
+</LinearLayout>

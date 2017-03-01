@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cell"
+    android:layout_width="180dp"
+    android:layout_height="240dp"
+    android:orientation="vertical">
+
+
+    <com.zhy.android.percent.support.PercentFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="83%"
+        app:layout_widthPercent="100%">
+
+        <TextView
+            android:id="@+id/ball_number"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/playerbg"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="center"
+            android:background="@mipmap/play_image"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="75%h" />
+
+        <ImageView
+
+            android:id="@+id/player_background"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+
+            android:src="@mipmap/no_player"
+            app:layout_heightPercent="86%"
+            app:layout_marginTopPercent="7%h"
+
+            app:layout_widthPercent="75%h" />
+
+        <ImageView
+            android:id="@+id/player_photo_img"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/tuoluo"
+            android:visibility="invisible"
+            app:layout_heightPercent="80%"
+            app:layout_marginTopPercent="10%h"
+            app:layout_widthPercent="50%h" />
+
+        <ImageView
+            android:id="@+id/deleteIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/delete_player_highlight"
+            android:visibility="invisible"
+
+            app:layout_heightPercent="13%"
+            app:layout_marginLeftPercent="65%"
+            app:layout_marginTopPercent="12%h"
+            app:layout_widthPercent="13%h" />
+
+    </com.zhy.android.percent.support.PercentFrameLayout>
+
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="-3dp"
+        android:orientation="horizontal"
+        app:layout_heightPercent="16%"
+        app:layout_widthPercent="100%">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:orientation="horizontal"
+
+            app:layout_widthPercent="45%">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/roundedImageView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="fitXY"
+                android:src="#ffffff"
+                app:layout_heightPercent="95%"
+                app:layout_marginRightPercent="5%"
+                app:layout_widthPercent="95%h"
+                app:riv_border_width="3dp"
+                app:riv_border_color="@color/fuchsia"
+                app:riv_mutate_background="true"
+                app:riv_oval="true" />
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_marginLeftPercent="5%"
+
+            app:layout_widthPercent="50%">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/playername"
+                android:text="@string/connect_noplayer"
+                android:textSize="10sp"
+                app:layout_heightPercent="40%" />
+
+            <TextView
+                android:id="@+id/player_textID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/connect_id"
+                android:textSize="8sp"
+                app:layout_heightPercent="30%" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/connect_exp"
+                android:textSize="7sp"
+                app:layout_heightPercent="30%" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

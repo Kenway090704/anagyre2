@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/connect_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    android:fitsSystemWindows="true">
+
+    <!--<include layout="@layout/widget_connect_main" />-->
+
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+
+        android:id="@+id/page_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false">
+
+        <!--RelativeLayout和自定义的ClipViewPager都各自添加了一个属性android:clipChildren=”false”，
+        clipChildren的意思是是否限制子View在其范围内，这个默认是true，
+        也就是默认是限制子view在其范围的-->
+        <!--wangqiubin-->
+        <com.aofei.tch.anagyre.connect.adapter.ClipViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:clipChildren="false"
+            android:overScrollMode="never"
+            app:layout_marginBottomPercent="10%"
+            app:layout_marginTopPercent="7%"
+            app:layout_widthPercent="30%" />
+
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <CheckBox
+        android:id="@+id/cb_delete"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:layout_marginBottomPercent="3%"
+
+        android:layout_marginRight="10dp"
+        android:background="@drawable/delete"
+        android:button="@null"
+        android:padding="5dp"
+        android:textSize="13sp"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="10%h" />
+
+    <ImageView
+        android:id="@+id/vline"
+        android:layout_width="2dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/cb_delete"
+        app:layout_marginRightPercent="2%"
+        android:layout_toLeftOf="@id/cb_delete"
+        android:background="@mipmap/v_line"
+        app:layout_heightPercent="8%" />
+
+    <CheckBox
+        android:id="@+id/cb_connect"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignTop="@+id/vline"
+        app:layout_marginRightPercent="2%"
+        android:layout_toLeftOf="@+id/vline"
+        android:background="@drawable/state_connect_tuoluo"
+        android:button="@null"
+        android:checked="false"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="8%h" />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        app:layout_marginBottomPercent="3%"
+        android:layout_marginLeft="10dp"
+        app:layout_heightPercent="15%"
+        app:layout_widthPercent="12%h">
+
+        <com.aofei.tch.anagyre.other.widget.PercentTextView
+            android:id="@+id/tv_con_num"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            app:baseScreenHeight="1200"
+            android:textSize="70px"
+            app:layout_heightPercent="50%"
+            app:layout_widthPercent="50%" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@mipmap/xie_line"
+            app:layout_heightPercent="50%"
+            app:layout_marginLeftPercent="25%"
+            app:layout_marginTopPercent="25%"
+            app:layout_widthPercent="50%" />
+
+        <com.aofei.tch.anagyre.other.widget.PercentTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="8"
+            android:textColor="#fff"
+
+            android:textStyle="bold"
+            app:baseScreenHeight="1200"
+            android:textSize="70px"
+            app:layout_heightPercent="50%"
+            app:layout_marginLeftPercent="50%"
+            app:layout_marginTopPercent="50%"
+            app:layout_widthPercent="50%" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

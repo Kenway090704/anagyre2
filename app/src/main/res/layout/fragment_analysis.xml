@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:background="@mipmap/analysis_data_frame"
+        app:layout_heightPercent="53%"
+        app:layout_marginLeftPercent="1%"
+        app:layout_marginTopPercent="2%"
+        app:layout_widthPercent="54%">
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:background="@mipmap/analysis_synthesize"
+        app:layout_heightPercent="41%"
+        app:layout_marginLeftPercent="1%"
+        app:layout_marginTopPercent="57%"
+        app:layout_widthPercent="54%">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/analysis_result"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:background="@mipmap/analysis_property"
+        app:layout_heightPercent="96%"
+        app:layout_marginLeftPercent="56%"
+        app:layout_marginTopPercent="2%"
+        app:layout_widthPercent="22%">
+
+        <ImageView
+            android:id="@+id/iv_analysis_data_frame"
+            android:layout_width="match_parent"
+            android:background="@mipmap/analysis_property_frame"
+            app:layout_heightPercent="45%"
+            app:layout_marginTopPercent="5%" />
+
+        <ImageView
+            android:id="@+id/iv_analysis_share"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/iv_analysis_data_frame"
+            android:background="@mipmap/analysis_share"
+            app:layout_heightPercent="10%"
+            app:layout_marginTopPercent="8%" />
+
+        <ImageView
+            android:id="@+id/iv_analysis_kongzhuan"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/kongzhuan_state"
+            app:layout_heightPercent="17%"
+            app:layout_marginBottomPercent="2%"
+            app:layout_marginLeftPercent="5%"
+            app:layout_widthPercent="43%" />
+
+        <ImageView
+            android:id="@+id/iv_analysis_crash"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/crash_state"
+            app:layout_heightPercent="17%"
+            app:layout_marginBottomPercent="2%"
+            app:layout_marginLeftPercent="52%"
+            app:layout_widthPercent="43%" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</com.zhy.android.percent.support.PercentRelativeLayout>

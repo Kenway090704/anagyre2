@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_nav_small_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:clickable="true"
+            app:riv_border_width="5dp"
+            app:riv_oval="true"
+            app:riv_mutate_background="true"
+            app:riv_border_color="#00ff00ff"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/nav_head_noconnect" />
+
+        <TextView
+            android:id="@+id/tv_nav_small_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:textSize="12sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/black"
+            android:text="@string/vs_drawer_noplayer" />
+
+        <TextView
+            android:id="@+id/tv_nav_small_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/black"
+            android:text="ID:xxxxxxxxx"
+            android:textSize="8sp" />
+    </LinearLayout>
+</LinearLayout>

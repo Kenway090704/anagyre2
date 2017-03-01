@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/page_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <!--RelativeLayout和自定义的ClipViewPager都各自添加了一个属性android:clipChildren=”false”，
+    clipChildren的意思是是否限制子View在其范围内，这个默认是true，
+    也就是默认是限制子view在其范围的-->
+    <!--wangqiubin-->
+    <com.aofei.tch.anagyre.connect.adapter.ClipViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="7%"
+        app:layout_marginBottomPercent="10%"
+        app:layout_widthPercent="30%"
+
+
+        android:clipChildren="false"
+        android:overScrollMode="never"
+         />
+
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

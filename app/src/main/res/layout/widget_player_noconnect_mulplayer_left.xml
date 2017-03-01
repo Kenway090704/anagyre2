@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+    <ImageView
+        android:id="@+id/iv_info_left_icon"
+        android:src="@mipmap/nav_head_noconnect"
+        app:layout_heightPercent="35%w"
+        app:layout_marginLeftPercent="5%w"
+        app:layout_widthPercent="35%w" />
+
+    <TextView
+        android:id="@+id/tv_info_left_blood_num"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@android:color/white"
+        app:layout_marginLeftPercent="35%w"
+        app:layout_marginTopPercent="12%w"
+        app:layout_textSizePercent="8%w"
+        app:layout_widthPercent="60%w" />
+
+    <ImageView
+        android:src="@mipmap/blood_frame_left"
+        app:layout_heightPercent="12%w"
+        app:layout_marginLeftPercent="37%w"
+        app:layout_marginTopPercent="22%w"
+        app:layout_widthPercent="58%w" />
+
+    <ImageView
+        android:id="@+id/iv_info_left_blood"
+        android:src="@mipmap/blood_green_left"
+        app:layout_heightPercent="10%w"
+        app:layout_marginLeftPercent="42%w"
+        app:layout_marginTopPercent="23%w"
+        app:layout_widthPercent="51%w" />
+
+    <TextView
+        android:id="@+id/tv_info_left_name"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_info_left_icon"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/mul_name"
+        android:textColor="@android:color/white"
+        app:layout_marginLeftPercent="5%w"
+        app:layout_textSizePercent="6%w"
+        app:layout_widthPercent="35%w" />
+
+    <TextView
+        android:id="@+id/tv_info_left_id"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_info_left_icon"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/connect_id"
+        android:textColor="@android:color/white"
+        app:layout_marginLeftPercent="35%w"
+        app:layout_textSizePercent="6%w"
+        app:layout_widthPercent="60%w" />
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aofei.tch.anagyre.vs.widget.CustomDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cdl_mulplayer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/analysis_property"
+    android:fitsSystemWindows="true">
+    <!--tools:openDrawer="start"-->
+    <!--主布局-->
+    <com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pll_mulplayer_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/mulplayer_bg"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            app:layout_widthPercent="22%w">
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.aofei.tch.anagyre.multiplayer.widget.PlayerInfoLeft
+                    android:id="@+id/pil_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.aofei.tch.anagyre.multiplayer.widget.PlayerInfoLeft
+                    android:id="@+id/pil_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.aofei.tch.anagyre.multiplayer.widget.PlayerInfoLeft
+                    android:id="@+id/pil_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.aofei.tch.anagyre.multiplayer.widget.PlayerInfoLeft
+                    android:id="@+id/pil_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+        </ScrollView>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="54.5%w">
+
+            <ImageView
+                android:id="@+id/iv_mulplayer_center"
+                android:layout_width="match_parent"
+                android:background="@mipmap/background"
+                app:layout_heightPercent="82%h" />
+
+            <com.aofei.tch.anagyre.multiplayer.widget.GifView
+                android:id="@+id/gv_mulplayer"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                app:layout_heightPercent="82%h" />
+
+            <Button
+                android:id="@+id/bt_mulplayer_start"
+                android:layout_below="@+id/iv_mulplayer_center"
+                android:background="@mipmap/mulplayer_start"
+                app:layout_heightPercent="9%h"
+                app:layout_marginLeftPercent="4%"
+                app:layout_marginTopPercent="4%"
+                app:layout_widthPercent="20%" />
+
+            <TextView
+                android:id="@+id/tv_mulplayer_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_mulplayer_center"
+                android:text="晋级人数"
+                android:textColor="@color/white"
+                app:layout_marginLeftPercent="30%"
+                app:layout_marginTopPercent="5.5%"
+                app:layout_textSizePercent="5%h" />
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/prl_mulplayer_num"
+                android:layout_below="@+id/iv_mulplayer_center"
+                android:layout_toRightOf="@id/tv_mulplayer_center"
+                android:background="@mipmap/promote_frame"
+                app:layout_heightPercent="9%h"
+                app:layout_marginLeftPercent="4%"
+                app:layout_marginTopPercent="4%"
+                app:layout_widthPercent="20%">
+
+
+                <ImageView
+                    android:id="@+id/iv_mulplayer_num_setting"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/promote_num_setting"
+                    app:layout_heightPercent="90%"
+                    app:layout_marginRightPercent="5%"
+                    app:layout_widthPercent="90%h" />
+
+                <TextView
+                    android:id="@+id/tv_mulplayer_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/iv_mulplayer_num_setting"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@android:color/black"
+                    app:layout_marginLeftPercent="5%"
+                    app:layout_textSizePercent="56%h" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/iv_mulplayer_center"
+                android:src="@mipmap/camera"
+                app:layout_heightPercent="12%h"
+                app:layout_marginRightPercent="4%"
+                app:layout_marginTopPercent="3%" />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            app:layout_widthPercent="22%w">
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.aofei.tch.anagyre.multiplayer.widget.PlayerInfoRight
+                    android:id="@+id/pir_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.aofei.tch.anagyre.multiplayer.widget.PlayerInfoRight
+                    android:id="@+id/pir_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.aofei.tch.anagyre.multiplayer.widget.PlayerInfoRight
+                    android:id="@+id/pir_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.aofei.tch.anagyre.multiplayer.widget.PlayerInfoRight
+                    android:id="@+id/pir_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/iv_mulplayer_drawer_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/vs_right_open_bar"
+            app:layout_widthPercent="1.5%" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    <!--侧滑栏-->
+    <com.aofei.tch.anagyre.other.ui.DrawerSideLayout
+        android:id="@+id/dsl_mulplayer_drawer"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="#c3c4c5"
+        android:clickable="true"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical" />
+
+</com.aofei.tch.anagyre.vs.widget.CustomDrawerLayout>

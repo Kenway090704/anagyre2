@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">anagyre</string>
+
+      <!--homeactivity中文字-->
+    <string name="rb_connect">陀螺连接</string>
+    <string name="rb_analyse">性能分析</string>
+    <string name="rb_vs">双人对战</string>
+    <string name="rb_mulplayer">多人混战</string>
+    <string name="rb_devstate">设备断开</string>
+    <string name="rb_login">帐号登陆</string>
+
+    <!--connect 界面文字-->
+    <string name="connect_noplayer">未连接用户</string>
+    <string name="connect_id">ID:</string>
+    <string name="connect_exp">经验值:</string>
+
+    <!--分析界面的文字-->
+    <string name="analysis_result">综合分析参数结果（仅供参考）</string>
+    <!--多人对战界面的文字-->
+
+    <string name="mul_winnum">晋级人数</string>
+    <string name="mul_name">****</string>
+
+    <!--vs 界面文字-->
+    <string name="vs_start">开始</string>
+    <string name="vs_reset">重置</string>
+    <string name="vs_drawer_noplayer">未绑定</string>
+    <string name="vs_drawer_id">ID:xxxxxxxxx</string>
+    <string name="vs_review">回放</string>
+
+    <!--exit dialog中使用的文字-->
+    <string name="dialog_action">提示</string>
+    <string name="dialog_msg">退出后无法实时查看陀螺状态，是否确定退出？</string>
+    <string name="dialog_min">最小化</string>
+    <string name="dialog_exit">退出</string>
+    <string name="dialog_cancel">取消</string>
+
+    <!--discovry dialog 中使用的文字-->
+    <string name="dialog_rediscovery">重新扫描</string>
+    <string name="dialog_hint">未找到陀螺蓝牙适配器,是否重新扫描</string>
+</resources>

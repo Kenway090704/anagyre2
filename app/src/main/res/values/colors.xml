@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--app 文字颜色-->
+    <color name="text_color_white">#FFFFFF</color>
+    <color name="text_color_black">#030303</color>
+    <color name="text_color_yellow">#dec528</color>
+
+
+    <color name="white">#FFFFFF</color> <!--白色 -->
+    <color name="yellow">#FFFF00</color> <!--黄色 -->
+    <color name="red">#FF0000</color> <!--红色 -->
+    <color name="blue">#ff0000ff</color>
+    <color name="fuchsia">#b702b7</color> <!--紫红色 -->
+    <color name="green">#ff00ff00</color>
+    <color name="orange">#ff7300</color> <!--橙色 -->
+    <color name="pink">#ec7a8e</color> <!--粉红色 -->
+    <color name="indigo">#4B0082</color> <!--靛青色 -->
+    <color name="lightcyan">#60eded</color> <!--亮青色 -->
+    <!--exit dialog使用的颜色-->
+    <color name="public_color_red">#F84D4D</color>
+    <color name="public_color_gray">#929292</color>
+    <color name="public_color_blue">#2f70b4</color>
+</resources>
